@@ -54,5 +54,3 @@ public class MenuUserController implements Initializable  {
 		}
 
 	}
-
-
