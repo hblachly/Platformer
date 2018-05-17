@@ -49,7 +49,7 @@ public class SignInSceneController {
             signInErrorLabel.setVisible(true);
             return false;
         }
-        controller.setScene(ViewNavigator.loadScene("Level 1", ViewNavigator.LEVEL_SCENE));
+        ViewNavigator.loadScene("Select Level", ViewNavigator.LEVEL_SELECT_SCENE);
         return true;
     }
     // Event Listener on Label[#signUpLabel].onMouseClicked

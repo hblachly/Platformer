@@ -6,11 +6,13 @@ import java.util.List;
 
 import javafx.geometry.Bounds;
 import javafx.scene.Scene;
+import javafx.scene.control.Label;
 import javafx.scene.input.KeyCode;
 import javafx.scene.input.KeyEvent;
 import javafx.scene.layout.Pane;
 import javafx.scene.paint.Color;
 import javafx.scene.shape.Circle;
+import javafx.scene.text.Font;
 
 public class Level
 {
@@ -20,8 +22,11 @@ public class Level
     private Point start = new Point();
     private Player playerObject;
     private Circle player;
+    private int coinsCollected = 0;
+    private Label coinCounter;
     private List<Platform> platforms;
     private List<Enemy> enemies;
+    private List<Coin> coins;
     private double rightBound = 600;
 	private double leftBound = 0;
 	private double upperBound = 0;
@@ -45,9 +50,11 @@ public class Level
     	player = playerObject.getVisualCircle();
         platforms = new ArrayList<>();
         enemies = new ArrayList<>();
+        coins = new ArrayList<>();
     	
         Platform plat;
         Enemy enemy;
+        Coin coin;
         for(int y = 0; y < map.length; y++)
         {
             for(int x = 0; x < map[y].length(); x++)
@@ -65,9 +72,19 @@ public class Level
                 	enemies.add(enemy);
                 	enemy.getVisual().forEach(node -> pane.getChildren().add(node));
                 }
+                else if (map[y].charAt(x) == 'c')
+                {
+                	coin = new Coin(x * 45, y * 45);
+                	coins.add(coin);
+                	coin.getVisual().forEach(node -> pane.getChildren().add(node));
+                }
             }
         }
         pane.getChildren().add(player);
+        coinCounter = new Label("Coins Collected: 0");
+        coinCounter.setTextFill(Color.ORANGE);
+        coinCounter.setFont(Font.font(20));
+        pane.getChildren().add(coinCounter);
     }
     
     public void scroll(Pane map)
@@ -77,24 +94,28 @@ public class Level
         double y = player.getCenterY() + player.getTranslateY();
         if (rightBound < 42 * 45 && x > rightBound - 300 )
         {
+        	coinCounter.setLayoutX(coinCounter.getLayoutX() + 8);
             map.setLayoutX(map.getLayoutX() - 8);
             rightBound += 8;
             leftBound += 8;
         }
         if (leftBound > 0 && x < rightBound - 300)
         {
-                map.setLayoutX(map.getLayoutX() + 8);
-                rightBound -= 8;
-                leftBound -=8;
+        	coinCounter.setLayoutX(coinCounter.getLayoutX() - 8);
+            map.setLayoutX(map.getLayoutX() + 8);
+            rightBound -= 8;
+            leftBound -=8;
         }
         if (upperBound > -200 && y < upperBound + 300)
         {
+        	coinCounter.setLayoutY(coinCounter.getLayoutY() - 8);
         	map.setLayoutY(map.getLayoutY() + 8);
         	upperBound -= 8;
         	lowerBound -= 8;
         }
         if (lowerBound < 600 && y > lowerBound - 300)
         {
+        	coinCounter.setLayoutY(coinCounter.getLayoutY() + 8);
         	map.setLayoutY(map.getLayoutY() - 8);
         	upperBound += 8;
         	lowerBound += 8;

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.Double?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Polygon?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="441.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.orangecoastcollege.cs272.ic13.view.LevelSelectSceneController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="448.0" layoutY="-7.0" stroke="BLACK" strokeType="INSIDE" width="600.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="100.0" layoutX="25.0" layoutY="25.0" stroke="BLACK" strokeType="INSIDE" width="150.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="100.0" layoutX="25.0" layoutY="275.0" stroke="BLACK" strokeType="INSIDE" width="150.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="100.0" layoutX="225.0" layoutY="25.0" stroke="BLACK" strokeType="INSIDE" width="150.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="100.0" layoutX="425.0" layoutY="25.0" stroke="BLACK" strokeType="INSIDE" width="150.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="100.0" layoutX="25.0" layoutY="150.0" stroke="BLACK" strokeType="INSIDE" width="150.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="100.0" layoutX="225.0" layoutY="150.0" stroke="BLACK" strokeType="INSIDE" width="150.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="100.0" layoutX="425.0" layoutY="150.0" stroke="BLACK" strokeType="INSIDE" width="150.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="100.0" layoutX="225.0" layoutY="275.0" stroke="BLACK" strokeType="INSIDE" width="150.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="100.0" layoutX="425.0" layoutY="275.0" stroke="BLACK" strokeType="INSIDE" width="150.0" />
+      <Label alignment="CENTER" layoutX="25.0" layoutY="25.0" onMouseClicked="#level1" prefHeight="100.0" prefWidth="150.0" text="Level 1">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="225.0" layoutY="25.0" prefHeight="100.0" prefWidth="150.0" text="Level 2">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="425.0" layoutY="25.0" prefHeight="100.0" prefWidth="150.0" text="Level 3">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="25.0" layoutY="150.0" prefHeight="100.0" prefWidth="150.0" text="Level 4">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="225.0" layoutY="150.0" prefHeight="100.0" prefWidth="150.0" text="Level 5">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="425.0" layoutY="150.0" prefHeight="100.0" prefWidth="150.0" text="Level 6">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="25.0" layoutY="275.0" prefHeight="100.0" prefWidth="150.0" text="Level 7">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="225.0" layoutY="275.0" prefHeight="100.0" prefWidth="150.0" text="Level 8">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="425.0" layoutY="275.0" prefHeight="100.0" prefWidth="150.0" text="Level 9">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="31.0" layoutX="31.0" layoutY="400.0" stroke="BLACK" strokeType="INSIDE" width="134.0" />
+      <Polygon fill="WHITE" layoutX="25.0" layoutY="426.0" rotate="-90.0" scaleX="0.5" scaleY="0.3" scaleZ="0.5" stroke="BLACK" strokeType="INSIDE">
+        <points>
+          <Double fx:value="-50.0" />
+          <Double fx:value="40.0" />
+          <Double fx:value="50.0" />
+          <Double fx:value="40.0" />
+          <Double fx:value="0.0" />
+          <Double fx:value="-60.0" />
+        </points>
+      </Polygon>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="27.0" layoutX="35.0" layoutY="401.0" stroke="TRANSPARENT" strokeType="INSIDE" width="12.0" />
+      <Label layoutX="45.0" layoutY="405.0" text="Back To Main Menu" />
+   </children>
+</Pane>
