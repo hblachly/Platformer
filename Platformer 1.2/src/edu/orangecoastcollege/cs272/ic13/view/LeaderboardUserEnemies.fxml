@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.orangecoastcollege.cs272.ic13.view.LeaderboardUserEnemies">
+	<children>
+		<GridPane prefHeight="480.0" prefWidth="640.0">
+			<columnConstraints>
+				<ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+				<ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+				<ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+				<ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+			</columnConstraints>
+			<rowConstraints>
+				<RowConstraints />
+				<RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+				<RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+				<RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+				<RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints />
+			</rowConstraints>
+			<children>
+				<Rectangle arcHeight="5.0" arcWidth="5.0" height="602.0" stroke="BLACK" strokeType="INSIDE" width="640.0" GridPane.rowIndex="3" />
+				<Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#loadStartScreen" prefHeight="30.0" prefWidth="70.0" style="-fx-background-color: BLACK;" text="Back" textAlignment="CENTER" textFill="WHITE" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="TOP">
+					<GridPane.margin>
+						<Insets left="5.0" top="5.0" />
+					</GridPane.margin>
+               <font>
+                  <Font name="Shovel Knight (Extended) Regular" size="13.0" />
+               </font>
+				</Button>
+				<Label text="Leaderboard" textAlignment="CENTER" textFill="TURQUOISE" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="1" GridPane.valignment="TOP">
+					<font>
+						<Font name="Shovel Knight (Extended) Regular" size="26.0" />
+					</font>
+					<GridPane.margin>
+						<Insets left="36.0" top="20.0" />
+					</GridPane.margin>
+				</Label>
+				<HBox prefHeight="120.0" prefWidth="237.0" spacing="25.0" GridPane.columnSpan="4" GridPane.rowIndex="2">
+					<children>
+						<Label onMouseClicked="#loadCoinBoard" prefWidth="124.0" text="Most Coins" textFill="WHITE">
+							<font>
+								<Font name="Shovel Knight (Extended) Regular" size="12.0" />
+							</font>
+						</Label>
+						<Label onMouseClicked="#loadEnemyBoard" text="Most Enemies Killed" textFill="WHITE">
+							<font>
+								<Font name="Shovel Knight (Extended) Regular" size="12.0" />
+							</font>
+							<HBox.margin>
+								<Insets />
+							</HBox.margin>
+						</Label>
+						<Label onMouseClicked="#loadClearBoard" text="Clear Time" textFill="WHITE">
+							<font>
+								<Font name="Shovel Knight (Extended) Regular" size="12.0" />
+							</font>
+						</Label>
+					</children>
+					<padding>
+						<Insets bottom="130.0" left="70.0" />
+					</padding>
+					<GridPane.margin>
+						<Insets top="50.0" />
+					</GridPane.margin>
+				</HBox>
+				<VBox prefHeight="158.0" prefWidth="136.0" spacing="14.0" GridPane.rowIndex="3">
+					<children>
+						<Label text=" Rank" textFill="YELLOW">
+							<font>
+								<Font name="Shovel Knight (Extended) Regular" size="16.0" />
+							</font>
+						</Label>
+						<Label text="  1st" textFill="WHITE">
+							<font>
+								<Font name="Shovel Knight (Extended) Regular" size="14.0" />
+							</font>
+						</Label>
+						<Label text="  2nd" textFill="RED">
+							<font>
+								<Font name="Shovel Knight (Extended) Regular" size="14.0" />
+							</font>
+						</Label>
+						<Label text="  3rd" textFill="#ffa100">
+							<font>
+								<Font name="Shovel Knight (Extended) Regular" size="14.0" />
+							</font>
+						</Label>
+						<Label text="  4th" textFill="PEACHPUFF">
+							<font>
+								<Font name="Shovel Knight (Extended) Regular" size="14.0" />
+							</font>
+						</Label>
+						<Label text="  5th" textFill="#551a8b">
+							<font>
+								<Font name="Shovel Knight (Extended) Regular" size="14.0" />
+							</font>
+						</Label>
+						<Label text="  6th" textFill="YELLOW">
+							<font>
+								<Font name="Shovel Knight (Extended) Regular" size="14.0" />
+							</font>
+						</Label>
+						<Label text="  7th" textFill="DARKGREEN">
+							<font>
+								<Font name="Shovel Knight (Extended) Regular" size="14.0" />
+							</font>
+						</Label>
+						<Label text="  8th" textFill="TURQUOISE">
+							<font>
+								<Font name="Shovel Knight (Extended) Regular" size="14.0" />
+							</font>
+						</Label>
+						<Label text="  9th" textFill="DARKBLUE">
+							<font>
+								<Font name="Shovel Knight (Extended) Regular" size="14.0" />
+							</font>
+						</Label>
+						<Label text=" 10th" textFill="LIGHTGREEN">
+							<font>
+								<Font name="Shovel Knight (Extended) Regular" size="14.0" />
+							</font>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+						</Label>
+					</children>
+					<GridPane.margin>
+						<Insets top="36.0" />
+					</GridPane.margin>
+					<padding>
+						<Insets bottom="15.0" left="50.0" />
+					</padding>
+				</VBox>
+				<VBox prefHeight="200.0" prefWidth="200.0" spacing="14.0" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="2" GridPane.rowSpan="3">
+					<children>
+						<Label text="Enemies Killed" textFill="YELLOW">
+							<font>
+								<Font name="Shovel Knight (Extended) Regular" size="16.0" />
+							</font>
+						</Label>
+						<Label fx:id="enemy1" text="100" textFill="WHITE">
+							<font>
+								<Font name="Shovel Knight (Extended) Regular" size="14.0" />
+							</font>
+                     <VBox.margin>
+                        <Insets left="50.0" />
+                     </VBox.margin>
+						</Label>
+						<Label fx:id="enemy2" text="  0" textFill="RED">
+							<font>
+								<Font name="Shovel Knight (Extended) Regular" size="14.0" />
+							</font>
+                     <VBox.margin>
+                        <Insets left="50.0" />
+                     </VBox.margin>
+						</Label>
+						<Label fx:id="enemy3" text="  0" textFill="#ffa100">
+							<font>
+								<Font name="Shovel Knight (Extended) Regular" size="14.0" />
+							</font>
+                     <VBox.margin>
+                        <Insets left="50.0" />
+                     </VBox.margin>
+						</Label>
+						<Label fx:id="enemy4" text="  0" textFill="PEACHPUFF">
+							<font>
+								<Font name="Shovel Knight (Extended) Regular" size="14.0" />
+							</font>
+                     <VBox.margin>
+                        <Insets left="50.0" />
+                     </VBox.margin>
+						</Label>
+						<Label fx:id="enemy5" text="  0" textFill="#551a8b">
+							<font>
+								<Font name="Shovel Knight (Extended) Regular" size="14.0" />
+							</font>
+                     <VBox.margin>
+                        <Insets left="50.0" />
+                     </VBox.margin>
+						</Label>
+						<Label fx:id="enemy6" text="  0" textFill="YELLOW">
+							<font>
+								<Font name="Shovel Knight (Extended) Regular" size="14.0" />
+							</font>
+                     <VBox.margin>
+                        <Insets left="50.0" />
+                     </VBox.margin>
+						</Label>
+						<Label fx:id="enemy7" text="  0" textFill="DARKGREEN">
+							<font>
+								<Font name="Shovel Knight (Extended) Regular" size="14.0" />
+							</font>
+                     <VBox.margin>
+                        <Insets left="50.0" />
+                     </VBox.margin>
+						</Label>
+						<Label fx:id="enemy8" text="  0" textFill="TURQUOISE">
+							<font>
+								<Font name="Shovel Knight (Extended) Regular" size="14.0" />
+							</font>
+                     <VBox.margin>
+                        <Insets left="50.0" />
+                     </VBox.margin>
+						</Label>
+						<Label fx:id="enemy9" text="  0" textFill="DARKBLUE">
+							<font>
+								<Font name="Shovel Knight (Extended) Regular" size="14.0" />
+							</font>
+                     <VBox.margin>
+                        <Insets left="50.0" />
+                     </VBox.margin>
+						</Label>
+						<Label fx:id="enemy10" text="  0" textFill="LIGHTGREEN">
+							<font>
+								<Font name="Shovel Knight (Extended) Regular" size="14.0" />
+							</font>
+                     <VBox.margin>
+                        <Insets left="50.0" />
+                     </VBox.margin>
+						</Label>
+					</children>
+					<GridPane.margin>
+						<Insets top="104.0" />
+					</GridPane.margin>
+					<padding>
+						<Insets left="60.0" top="15.0" />
+					</padding>
+				</VBox>
+				<VBox prefHeight="200.0" prefWidth="100.0" spacing="14.0" GridPane.columnIndex="2" GridPane.columnSpan="2" GridPane.rowIndex="3" GridPane.rowSpan="3">
+					<children>
+						<Label text="Names" textFill="YELLOW">
+							<font>
+								<Font name="Shovel Knight (Extended) Regular" size="16.0" />
+							</font>
+						</Label>
+						<Label fx:id="en1" text="Kingsley" textFill="WHITE">
+							<font>
+								<Font name="Shovel Knight (Extended) Regular" size="14.0" />
+							</font>
+						</Label>
+						<Label fx:id="en2" text="Matthew" textFill="RED">
+							<font>
+								<Font name="Shovel Knight (Extended) Regular" size="14.0" />
+							</font>
+						</Label>
+						<Label fx:id="en3" text="Hunter" textFill="#ffa100">
+							<font>
+								<Font name="Shovel Knight (Extended) Regular" size="14.0" />
+							</font>
+						</Label>
+						<Label fx:id="en4" text="..." textFill="PEACHPUFF">
+							<font>
+								<Font name="Shovel Knight (Extended) Regular" size="14.0" />
+							</font>
+						</Label>
+						<Label fx:id="en5" text="..." textFill="#551a8b">
+							<font>
+								<Font name="Shovel Knight (Extended) Regular" size="14.0" />
+							</font>
+						</Label>
+						<Label fx:id="en6" text="..." textFill="YELLOW">
+							<font>
+								<Font name="Shovel Knight (Extended) Regular" size="14.0" />
+							</font>
+						</Label>
+						<Label fx:id="en7" text="..." textFill="DARKGREEN">
+							<font>
+								<Font name="Shovel Knight (Extended) Regular" size="14.0" />
+							</font>
+						</Label>
+						<Label fx:id="en8" text="..." textFill="TURQUOISE">
+							<font>
+								<Font name="Shovel Knight (Extended) Regular" size="14.0" />
+							</font>
+						</Label>
+						<Label fx:id="en9" text="..." textFill="DARKBLUE">
+							<font>
+								<Font name="Shovel Knight (Extended) Regular" size="14.0" />
+							</font>
+						</Label>
+						<Label fx:id="en10" text="..." textFill="LIGHTGREEN">
+							<font>
+								<Font name="Shovel Knight (Extended) Regular" size="14.0" />
+							</font>
+						</Label>
+					</children>
+					<padding>
+						<Insets bottom="93.0" left="205.0" />
+					</padding>
+               <GridPane.margin>
+                  <Insets top="8.0" />
+               </GridPane.margin>
+				</VBox>
+			</children>
+		</GridPane>
+	</children>
+</AnchorPane>

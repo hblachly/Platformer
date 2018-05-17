@@ -37,7 +37,7 @@ public class MenuUserController implements Initializable  {
 	    @FXML
 	    void loadLeaderboard(ActionEvent event) 
 	    {
-	    	ViewNavigator.loadScene("Leaderboard", ViewNavigator.LEADERBOARD_SCENE);
+	    	ViewNavigator.loadScene("Leaderboard", ViewNavigator.LEADERBOARD_USER_SCENE);
 	    }
 
 

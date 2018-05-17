@@ -8,6 +8,9 @@ import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
 
 public class ViewNavigator {
+	public static final String LEADERBOARD_USER_SCENE = "LeaderboardUser.fxml";
+	public static final String LEADERBOARD_USER_ENEMY_SCENE = "LeaderboardUserEnemies.fxml";
+	public static final String LEADERBOARD_USER_CLEAR_SCENE = "LeaderboardUserClear.fxml";
 	public static final String LEADERBOARD_SCENE = "Leaderboard.fxml";
 	public static final String LEADERBOARD_ENEMY_SCENE = "LeaderboardEnemies.fxml";
 	public static final String LEADERBOARD_CLEAR_SCENE = "LeaderboardClear.fxml";
